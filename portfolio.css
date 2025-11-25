@@ -355,10 +355,10 @@ flex-direction:row;
 }
 
 
-#contact form input{
+#contact form input ,textarea{
     min-width: 100px;
     max-height: fit-content;
-    
+    padding: 8px 12px;
 }
 #contact form button{
     background-color: #333;
