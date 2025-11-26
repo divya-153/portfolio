@@ -11,18 +11,21 @@ body{
     background-color: #ffffff;
     color:#1a1a1a ;
     border: 10px solid white;
-
+   
 }
 
 header .container-fluid{
     background-color: #333;
     padding: 30px 15px;
-   
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    gap: 4px;
+
 }
-header .row{
-    display: flex; 
-    align-items: center;
-   
+
+header .description{
+    display: block;
 }
 header img{
     border:8px solid white;
@@ -87,6 +90,7 @@ main {
     
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 0 15px;
 }
 
 
@@ -121,9 +125,8 @@ main h2{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    
     max-width: 90%;
-    margin: 0 0 40px 20%;
+    margin: 0 auto 40px auto;
     justify-content: flex-start;
 }
 #skills h3 {
@@ -139,7 +142,7 @@ main h2{
     width: 30rem;
 
     /* Heading aligned to left */
-    margin: 30px auto 20px 10%;
+    margin: 30px auto 20px 15px;
     border: 3px solid #333;
     height: auto;
     min-height: 70px;
@@ -341,6 +344,8 @@ main h2{
     width: fit-content;
     border-radius: 10px;
     padding: 30px 20px;
+
+    margin: 0 auto;
 }
 
 #contact form .form-group{
