@@ -1,0 +1,143 @@
+clip-path: polygon(
+        0% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        0% 100%,
+        0% 50%
+    );
+    
+
+    
+    background-color:#f0f0f0;
+    padding: 10px 15px;
+    max-width:25% ;
+    margin: 2% 0 2% 5%;
+    border: 3px solid #333;
+    height: auto;
+
+
+
+    education:
+
+    
+#education .container-fluid .rows{
+    display: flex;
+    justify-content: ;
+    flex-wrap: wrap;   
+    align-items: center;
+    padding: 2px 0;
+    margin: 0 5%;
+}
+
+/* Year styling */
+#education .container-fluid time{
+    font-size: 20px;
+    font-weight: 600; 
+}
+#education .container-fluid  h4{
+    font-size: 20px;
+    font-weight: 600; 
+}
+#education .container-fluid p{
+    font-size: 18px;
+   
+}
+
+/* Timeline vertical line */
+.time-line {
+    
+    width: 20px;
+    height: 70px;
+    background: #3333338e;            /* blue fill */
+    clip-path: polygon(
+    0% 0%,        /* 1 — left-top */
+    50% 30%,       /* 2 — top-mid */
+    100% 0%,      /* 3 — right-top */
+    100% 80%,     /* 4 — right-bottom */
+    50% 100%,     /* 5 — bottom-mid (V cut) */
+    0% 80%        /* 6 — left-bottom */
+    );
+    border: 3px solid#3333338e;       /* dark outline */
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+}
+/* Timeline dot */
+.icon img{
+    width: 48px;
+    top: 5px;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Space between date and timeline */
+    margin-right: 20px;
+}
+.details{
+    flex-grow: 1;
+}
+
+
+
+<!--Education-->
+<section id="education" title="Education of Divya E">
+  <h2>Education</h2>
+  <div class="container-fluid">
+  <div class="rows">
+  <div class="year">
+     <time datetime="2021">2021 - 2025</time>
+  </div>
+  
+  <div class="middle">
+    <div class="icon">
+        <img src="./images/edu.png" alt="graduate-icon">
+    </div>
+    <div class="time-line"></div>
+</div>
+
+  <div class="details">
+  <h4>B.E. Computer Sciene and Engineering - 80%</h4>
+  <p>Einstein College of Engineering, Tirunelveli.</p>
+  </div>
+</div>
+
+
+ 
+ <div class="rows">
+ <div class="year">
+     <time datetime="2020">2020 - 2021</time>
+  </div>
+  <div class="middle">
+    <div class="icon">
+        <img src="./images/edu.png" alt="graduate-icon">
+    </div>
+    <div class="time-line"></div>
+</div>
+
+  <div class="details">
+  <h4> HSC - 88% (Rank Holder)</h4>
+  <p>Hindu Higher Secondary School, Mayamankurichi.</p>
+  </div>
+</div>
+
+ 
+ <div class="rows">
+ <div class="year">
+     <time datetime="2018">2018 - 2019</time>
+  </div>
+  <div class="middle">
+    <div class="icon">
+        <img src="./images/edu.png" alt="graduate-icon">
+    </div>
+    <div class="time-line"></div>
+</div>
+  <div class="details">
+  <h4>SSLC - 86% (Rank Holder)</h4>
+  <p>Hindu Higher Secondary School, Mayamankurichi.</p>
+  </div>
+   </div>
+ </div> 
+ 
+</section>
