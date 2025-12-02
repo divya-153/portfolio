@@ -69,15 +69,20 @@ header .container p{
     border-radius: 5px;
 }
 
+.contact img:hover{
+     transform: scale(1.1);
+}
+
 
 nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: #333333db;
     border-left: 8px solid white;
     border-right: 8px solid white;
-    flex-wrap: no-wrap;
-
+ 
+   
 }
 nav a{
     color: #f0f0f0;
@@ -119,6 +124,7 @@ main h2{
     text-align: justify;
 
 }
+
 #skills h3 {
     font-size: 25px;
     font-weight: 500;
@@ -230,10 +236,13 @@ main h2{
 
 
 /*experience */
+.professional-exp{
+    padding: 2%;
+}
 
 #professional-exp .container-fluid{
     display: flex;
-    gap:10px;
+    gap: 30px;
 }
 #professional-exp ol li {
     font-size: 25px;
@@ -256,19 +265,44 @@ main h2{
     font-weight:500;
 }
 #professional-exp img{
-    width: 50px;
+    width: 60px;
     
 }
 
+/*Training and course */
+
+.course{
+    padding: 2%;
+}
+
+#course ol li {
+    font-size: 25px;
+    font-weight: 500;
+}
+#course ol h3 {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+   
+}
+#course ul li{
+    font-size: 19px;
+    font-weight: normal;
+}
 /* Projects */
 
-#projects li {
-    font-size :30px; 
-    font-weight:500;
+.projects{
+    padding: 1%;
+}
+#projects ol li {
+    font-size: 25px;
+    font-weight: 500;
 }
 #projects ol h3 {
-    font-size :35px; 
-    font-weight:500;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+   
 }
 #projects ul li{
     font-size: 19px;
@@ -299,9 +333,11 @@ main h2{
 
 #projects img{
     width: 60px;
-    top: 5px;
+    
 }
-
+.certifications{
+    padding: 2%;
+}
 #certifications a{
     text-decoration: none;
     color: black;
@@ -328,7 +364,7 @@ main h2{
     border-radius: 10px;
     padding: 30px 20px;
 
-    margin: 0 auto;
+    margin: 2% auto;
 }
 
 #contact form .form-group{
@@ -425,6 +461,13 @@ header .container-fluid p{
         font-size:smaller;
         padding: 2px 5px;
     }
+
+.contact img{
+    max-width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
  #skills h3 {
     font-size: 17px;
     width: 100%;
@@ -450,6 +493,18 @@ header .container-fluid p{
         width: 90px;
         height: 90px;
     }
+#footer nav {
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    background-color: #333333db;
+    padding: 10px 15px;
+    margin: 30px 0;
+
+}
+
 
 
 }
