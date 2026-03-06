@@ -58,7 +58,12 @@ body{
     flex-direction:column;
     gap:20px;
 }
-
+.tech-stack{
+    margin-top:8px;
+    color:#bbbbbb;
+    font-size:18px;
+    letter-spacing:1px;
+}
 .hero-buttons{
     display:flex;
     gap:20px;
@@ -478,7 +483,7 @@ flex-direction:row;
 @media(max-width:768px){
 
 
-header .contain{
+header .container{
   
     padding: 20px 10px;
    
