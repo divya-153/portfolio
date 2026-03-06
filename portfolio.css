@@ -34,15 +34,64 @@ body{
 .description{
     display: block;
 }
-.profile img{
-    border:8px solid white;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;      /* crop the image */
-    object-position: top;    /* which position need while crop */
-    
+
+.description h2{
+    font-size:32px;
+    font-weight:400;
+    color:#e0e0e0;
+    margin-top:5px;
 }
+
+.description p{
+    max-width:500px;
+    margin-top:10px;
+}
+
+.hero-buttons{
+    margin-top:20px;
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    background:#ffffff;
+    color:#333;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.btn:hover{
+    background:#f0f0f0;
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#333;
+}
+.profile img{
+    border:6px solid white;
+    border-radius:50%;
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:transform 0.3s;
+}
+
+.profile img:hover{
+    transform:scale(1.05);
+}
+
 header .container h1{
     font-size: 70px;
     font-weight :400;
