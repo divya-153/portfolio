@@ -26,28 +26,30 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:80px;
+    gap:50px;
     flex-wrap:wrap;
+     max-width:1100px;
+    margin:auto;
 }
 
-.description{
-    display: block;
-}
 
 .description h1{
     font-size:60px;
     font-weight:600;
     letter-spacing:1px;
     color:white;
+    margin-bottom:5px;
 }
 
 .description h2{
     font-size:30px;
     color:#e0e0e0;
+    margin-bottom:5px;
 }
 
 .description p{
     font-size:20px;
+    max-width: 550px;
     line-height:1.6;
     margin-top:10px;
     color:#d0d0d0;
@@ -57,16 +59,21 @@ body{
     display:flex;
     flex-direction:column;
     gap:20px;
+    flex:1;
+    max-width:600px;
 }
 .tech-stack{
     margin-top:8px;
     color:#bbbbbb;
     font-size:18px;
     letter-spacing:1px;
+    margin-bottom:5px;
 }
+
 .hero-buttons{
     display:flex;
     gap:20px;
+    flex-wrap: wrap;
 }
 .btn{
     background:white;
@@ -95,6 +102,10 @@ body{
     background:white;
     color:#333;
 }
+
+.profile{
+    flex:0 0 220px;
+}
 .profile img{
     border:6px solid white;
     border-radius:50%;
@@ -109,21 +120,6 @@ body{
     transform:scale(1.07);
 }
 
-header .container h1{
-    font-size: 70px;
-    font-weight :400;
-    letter-spacing: 1px;
-    color:#ffffff;
-    
-}
-
-header .container p{
-    font-size: 35px;
-    font-weight :300; 
-    color:#f0f0f0;
-    line-height: 1.4;
-    letter-spacing: 0.5px;
-}
 
 .contact table{
    border-collapse: separate;
@@ -140,31 +136,50 @@ header .container p{
     transform:scale(1.2);
 }
 
-
+/* 2. NAV */
 nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     background-color: #333333db;
-    border-left: 8px solid white;
-    border-right: 8px solid white;
- 
-   
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
 }
-nav a{
-    color: #f0f0f0;
-    text-decoration: none;  /* remove default link underline */
-    font-size: large;
-    padding: 15px 15px;
-   
 
+.nav-container{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
 }
-nav a:hover {
-    color:white;        /* changes text color on hover */
-    text-decoration: underline;  /* adds underline */
-    background-color:color-mix(in srgb, #333333db 80%, white 20%) ;      /*used to convert one color to lite (fade) color of that color */
-    border-radius: 5px;    
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+    color:white;
+    text-decoration:none;
 }
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:#f0f0f0;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.nav-links a:hover{
+    color:white;
+    border-bottom:2px solid white;
+}
+
+/*  MAIN  */
 main {
     padding: 5px 10px 5px;
 }
