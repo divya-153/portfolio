@@ -283,49 +283,66 @@ main h2{
     font-size:16px;
 }
 
-/*  SKILLS */
-#skills h3{
-    font-size:22px;
-    font-weight:600;
-    color:#333;
-    margin:30px 0 10px;
-    padding-left:10px;
-    border-left:4px solid #333;
-}
-
+/* SKILL */
 #skills .container-fluid{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(120px,1fr));
+    grid-template-columns:repeat(auto-fit, minmax(130px,1fr));
     gap:25px;
     margin:20px 0 30px;
 }
 
-/* Image styling */
-#skills .container-fluid img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    border: 2px solid #333;
-    border-radius: 15px;
-    transition: transform 0.3s;
-    padding: 10px 0px;
-    
-}
+/* Skill card */
 #skills figure{
+    background:#f7f7f7;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:15px 10px;
     text-align:center;
+    transition:all 0.3s ease;
+    opacity:0;
+    transform:translateY(20px);
+
+}
+#skills figure.show{
+    opacity:1;
+    transform:translateY(0);
+    transition:0.5s ease;
 }
 
-#skills .container-fluid img:hover {
-    transform: scale(1.1);
+/* Hover effect */
+#skills figure:hover{
+    transform:translateY(-6px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.1);
 }
 
-/* Text under image */
-#skills .container-fluid figcaption {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 10px;
+/* Skill icon */
+#skills figure img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
 }
 
+/* Skill name */
+#skills figcaption{
+    font-size:15px;
+    margin-top:8px;
+    font-weight:500;
+}
+.concept-list{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin:15px 0;
+}
+
+.concept-list li{
+list-style:none;
+background:#f3f3f3;
+padding:8px 14px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+}
 
 /*Education */
 .education{
