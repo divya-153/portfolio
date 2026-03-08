@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,6 +55,22 @@ transition:0.3s;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
+height:100%;
+
+position:relative;
+overflow:hidden;
+}
+
+/* TOP ACCENT LINE */
+
+.project-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:#2563eb;
 }
 
 .project-card:hover{
@@ -61,10 +78,22 @@ transform:translateY(-8px);
 box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
 
+/* IMAGE */
+
 .project-card img{
 width:100%;
 border-radius:8px;
 margin-bottom:15px;
+transition:0.3s;
+}
+
+.project-card:hover img{
+transform:scale(1.03);
+}
+
+.project-card h3{
+margin:10px 0;
+font-size:20px;
 }
 
 /* TECH TAGS */
@@ -75,8 +104,9 @@ margin-bottom:15px;
 
 .tech-tags span{
 background:#eef2ff;
+color:#3730a3;
 padding:4px 10px;
-border-radius:6px;
+border-radius:20px;
 font-size:12px;
 margin-right:6px;
 }
@@ -86,6 +116,7 @@ margin-right:6px;
 .project-card ul{
 padding-left:18px;
 margin-bottom:15px;
+line-height:1.6;
 }
 
 .project-card li{
@@ -106,14 +137,16 @@ flex-wrap:wrap;
 text-decoration:none;
 background:#2563eb;
 color:white;
-padding:7px 14px;
+padding:8px 16px;
 border-radius:6px;
 font-size:14px;
-transition:0.25s;
+font-weight:500;
+transition:all 0.25s ease;
 }
 
 .project-links a:hover{
 background:#1e4ed8;
+transform:translateY(-2px);
 }
 
 /* BACK BUTTON */
@@ -123,11 +156,35 @@ display:block;
 width:200px;
 margin:60px auto 0;
 text-align:center;
-padding:10px;
+padding:12px;
 background:#333;
 color:white;
 text-decoration:none;
 border-radius:6px;
+transition:0.25s;
+}
+
+.back-btn:hover{
+background:#000;
+transform:translateY(-2px);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+.mini-projects{
+padding:40px 6%;
+}
+
+.subtitle{
+margin-bottom:30px;
+}
+
+.projects-container{
+gap:20px;
+}
+
 }
 
 </style>
@@ -141,7 +198,7 @@ border-radius:6px;
 <h1>Mini Projects</h1>
 
 <p class="subtitle">
-A collection of small web applications built to practice frontend development concepts, JavaScript logic and UI design.
+A collection of small web applications built to practice frontend development concepts, JavaScript functionality, and modern UI design.
 </p>
 
 <div class="projects-container">
@@ -170,22 +227,18 @@ A collection of small web applications built to practice frontend development co
 </ul>
 
 <div class="project-links">
-
 <a href="https://divya-153.github.io/Digital-clock_-Divi/" target="_blank">Live Demo</a>
-
 <a href="https://github.com/divya-153/Digital-clock_-Divi" target="_blank">GitHub</a>
-
 </div>
 
 </div>
-
 
 
 <!-- FOOD DELIVERY -->
 
 <div class="project-card">
 
-<img src="./images/fooddelivery.png" alt="Food Delivery">
+<img src="./images/food.svg" alt="Food Delivery">
 
 <h3>Food Delivery UI</h3>
 
@@ -202,22 +255,18 @@ A collection of small web applications built to practice frontend development co
 </ul>
 
 <div class="project-links">
-
 <a href="https://divya-153.github.io/Foodieee_Fast_Delivery/" target="_blank">Live Demo</a>
-
 <a href="https://github.com/divya-153/Foodieee_Fast_Delivery" target="_blank">GitHub</a>
-
 </div>
 
 </div>
-
 
 
 <!-- HOTSTAR CLONE -->
 
 <div class="project-card">
 
-<img src="./images/hotstar.png" alt="Hotstar Clone">
+<img src="./images/hotstar.webp" alt="Hotstar Clone">
 
 <h3>Hotstar Streaming UI Clone</h3>
 
@@ -235,22 +284,18 @@ A collection of small web applications built to practice frontend development co
 </ul>
 
 <div class="project-links">
-
 <a href="https://divya-153.github.io/Hotstar_clone/" target="_blank">Live Demo</a>
-
 <a href="https://github.com/divya-153/Hotstar_clone" target="_blank">GitHub</a>
-
 </div>
 
 </div>
-
 
 
 <!-- CALCULATOR -->
 
 <div class="project-card">
 
-<img src="./images/calculator.png" alt="Calculator">
+<img src="./images/calculator.webp" alt="Calculator">
 
 <h3>Calculator Web Application</h3>
 
@@ -268,22 +313,18 @@ A collection of small web applications built to practice frontend development co
 </ul>
 
 <div class="project-links">
-
 <a href="https://divya-153.github.io/Calculator/" target="_blank">Live Demo</a>
-
 <a href="https://github.com/divya-153/Calculator" target="_blank">GitHub</a>
-
 </div>
 
 </div>
-
 
 
 <!-- PORTFOLIO -->
 
 <div class="project-card">
 
-<img src="./images/portfolio.png" alt="Portfolio">
+<img src="./images/portfolio.webp" alt="Portfolio">
 
 <h3>Developer Portfolio</h3>
 
@@ -301,11 +342,8 @@ A collection of small web applications built to practice frontend development co
 </ul>
 
 <div class="project-links">
-
 <a href="https://divya-153.github.io/portfolio/" target="_blank">Live Demo</a>
-
 <a href="https://github.com/divya-153/portfolio" target="_blank">GitHub</a>
-
 </div>
 
 </div>
